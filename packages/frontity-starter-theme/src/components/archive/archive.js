@@ -33,7 +33,7 @@ const Archive = ({ state, showMedia }) => {
       {data.isTaxonomy && (
         <Container sx={{ maxWidth: "l", my: 40 }}>
           <p sx={{ textAlign: "center" }}>{currentCat[0].description}</p>
-          {currentCat[0].acf.taxMenu && (
+          {currentCat[0]?.acf?.taxMenu && (
             <Flex
               as="nav"
               className="taxMenu"
@@ -46,7 +46,7 @@ const Archive = ({ state, showMedia }) => {
                 a: { textTransform: "uppercase", fontSize: "xs", px: 15 },
               }}
             >
-              {currentCat[0].acf.taxMenu.map((item, i) => {
+              {currentCat[0]?.acf?.taxMenu?.map((item, i) => {
                 const { url, title } = item.menu_item;
                 const { backend } = state.frontity;
                 const cleanUrl = url?.replace(backend, "");
