@@ -58,7 +58,7 @@ const CommentsForm = ({ actions, state, postId }) => {
               })
             }
             value={state.comments.forms[postId]?.fields?.content || ""}
-            placeholder="Mensage"
+            placeholder="Mensaje"
           />
           {/* Show the errors for the individual fields.
             E.g. content of a comment cannot be empty and the email must be valid */}
