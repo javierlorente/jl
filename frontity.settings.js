@@ -16,12 +16,12 @@ const settings = {
         theme: {
           menu: [
             ["Inicio", "/"],
-            ["SEO", "/c/seo"],
-            ["Tecnologia", "/c/tecnologia"],
+            ["SEO", "/c/seo/"],
+            ["Tecnologia", "/c/tecnologia/"],
             ["Economia", "/c/economia/"],
             ["Viajes", "/c/viajes/"],
             ["Movilidad", "/c/movilidad/"],
-            ["Contacto", "/contacto"],
+            ["Contacto", "/contacto/"],
           ],
           autoPreFetch: "all",
           featured: {
