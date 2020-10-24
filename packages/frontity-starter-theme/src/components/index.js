@@ -31,6 +31,11 @@ const Theme = ({ state }) => {
           <title>{title}</title>
           <meta name="description" content={state.frontity.description} />
           <html lang="en" />
+          <script
+            data-ad-client="ca-pub-2523307744148497"
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          ></script>
         </Head>
         <FontFace />
         <Global styles={globalStyles} />
