@@ -12,7 +12,6 @@ const settings = {
     "frontity-contact-form-7",
     {
       name: "frontity-starter-theme",
-      // name: "@frontity/twentytwenty-theme",
       state: {
         theme: {
           menu: [
