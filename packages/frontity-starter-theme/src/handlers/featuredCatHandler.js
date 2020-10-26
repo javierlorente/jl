@@ -7,7 +7,9 @@ export const featuredCatHandler = {
     const { query } = libraries.source.parse(link);
     const response = await libraries.source.api.get({
       endpoint: state.source.postEndpoint,
-      params: { categories: 1780, per_page: 50, search: query.s },
+      params: query.s
+        ? { per_page: 50, search: query.s }
+        : { per_page: 50, categories: 1780 },
     });
 
     //2. add items to the state
