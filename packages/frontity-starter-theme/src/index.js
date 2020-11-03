@@ -18,7 +18,7 @@ const starterTheme = {
       /**
        * The logo can be a text or an image url
        */
-      logo: "Javier Lorente",
+      logo: "J.Lorente",
       // logo:
       //   "https://about.canva.com/en_in/wp-content/uploads/sites/3/2016/08/logos-1.png",
       // logo: Logo,
