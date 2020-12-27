@@ -4,6 +4,7 @@ import {
   // categoriesHandler,
   featuredCatHandler,
   allCategoriesHandler,
+  menuHandler
 } from "./handlers";
 
 const starterTheme = {
@@ -60,6 +61,7 @@ const starterTheme = {
       },
       beforeSSR: ({ actions }) => async () => {
         await actions.source.fetch("all-categories");
+        await actions.source.fetch("menus/primary");
       },
     },
   },
@@ -68,7 +70,7 @@ const starterTheme = {
       processors: [image],
     },
     source: {
-      handlers: [featuredCatHandler, allCategoriesHandler],
+      handlers: [featuredCatHandler, allCategoriesHandler, menuHandler],
     },
   },
 };
