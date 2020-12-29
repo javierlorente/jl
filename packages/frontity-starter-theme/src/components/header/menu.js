@@ -3,11 +3,10 @@ import { jsx, Flex } from "theme-ui";
 import { connect } from "frontity";
 import Link from "../link";
 
-const Menu = ({ state, direction, ...props }) => {
+const Menu = ({ state, direction, className }) => {
   const { items } = state.source.get("menus/primary");
-
   return (
-    <Flex as="nav" {...props}>
+    <Flex as="nav" className={className}>
       {items.map(([name, link]) => {
         const isCurrentPage = state.router.link === link;
         return (

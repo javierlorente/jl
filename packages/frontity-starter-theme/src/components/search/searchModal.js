@@ -5,7 +5,7 @@ import { Layer, Button } from "grommet";
 import { connect } from "frontity";
 import SearchForm from "./searchForm";
 
-const SearchModal = ({ state, actions, ...props }) => {
+const SearchModal = ({ state, actions }) => {
   // Get the state of the search modal
   const { isSearchModalOpen } = state.theme;
   const { openSearchModal, closeSearchModal } = actions.theme;
@@ -28,7 +28,7 @@ const SearchModal = ({ state, actions, ...props }) => {
         className={
           isSearchModalOpen ? "btn-search-opened" : "btn-search-closing"
         }
-        {...props}
+
       >
         <Search />
       </Box>

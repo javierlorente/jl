@@ -5,9 +5,8 @@ import { iosSunny as sun } from "react-icons-kit/ionicons/iosSunny";
 import { iosMoon as moon } from "react-icons-kit/ionicons/iosMoon";
 import Switch from "@frontity/components/switch";
 
-const ColorSwitch = ({ ...props }) => {
+const ColorSwitch = (props) => {
   const [colorMode, setColorMode] = useColorMode("dark");
-
   return (
     <Box
       onClick={() => setColorMode(colorMode === "default" ? "dark" : "default")}

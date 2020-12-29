@@ -18,8 +18,9 @@ function PostEntryMedia({
   const noImgProps = Object.keys(imgProps).length === 0;
 
   if (noImgProps) return null;
+
   return (
-    <figure {...props}>
+    <figure>
       <AspectRatio ratio={ratio}>
         <Image {...imgProps} />
       </AspectRatio>

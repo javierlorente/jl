@@ -48,10 +48,12 @@ const Archive = ({ state, showMedia }) => {
             >
               {currentCat[0]?.acf?.taxMenu?.map((item, i) => {
                 const { url, title } = item.menu_item;
+                if(!url) {
+                  return null
+                }
                 const { backend } = state.frontity;
                 const cleanUrl = url?.replace(backend, "");
-                console.log("url", cleanUrl);
-
+    
                 return (
                   <>
                     {url && title && (

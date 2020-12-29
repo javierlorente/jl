@@ -11,7 +11,6 @@ const reverseFormat = (query) => query.replace("+", " ");
 const SearchResults = ({ state }) => {
   // Get information about the current URL.
   const data = getUrlData(state);
-  console.log("data", data);
   const { total, searchQuery } = data;
   // data.total → total pages that match the current path/url
   // data.searchQuery → query done to get search results

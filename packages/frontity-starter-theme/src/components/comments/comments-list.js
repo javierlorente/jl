@@ -5,8 +5,6 @@ import { connect } from "frontity";
 
 const CommentsList = ({ state, libraries, postId }) => {
   const data = state.source.get(`@comments/${postId}`);
-  console.log("data", data);
-
   const Html2React = libraries.html2react.Component;
 
   return (

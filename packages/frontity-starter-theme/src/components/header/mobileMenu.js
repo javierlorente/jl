@@ -6,13 +6,13 @@ import { Layer, Button } from "grommet";
 import Menu from "./menu";
 import mobileMenuStyles from "../../styles/mobileMenuStyles";
 
-const MobileMenu = ({ state, actions, ...props }) => {
+const MobileMenu = ({ state, actions, className, ...props }) => {
   const isOpen = state.theme.isMobileMenuOpen;
 
   const { openMobileMenu, closeMobileMenu } = actions.theme;
 
   return (
-    <Box {...props}>
+    <Box className={className}>
       <Button
         icon={<MenuIcon />}
         a11yTitle="Open navigation menu"

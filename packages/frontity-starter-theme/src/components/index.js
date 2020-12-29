@@ -30,7 +30,7 @@ const Theme = ({ state }) => {
         <Head>
           <title>{title}</title>
           <meta name="description" content={state.frontity.description} />
-          <html lang="en" />
+          <html lang="es" />
           <script
             data-ad-client="ca-pub-2523307744148497"
             async

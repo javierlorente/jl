@@ -14,15 +14,16 @@ const icons = {
   instagram: socialInstagram
 };
 
-const SocialShare = ({ state, ...props }) => {
+const SocialShare = ({ state }) => {
   const { socialLinks } = state.theme;
+
   return (
-    <Flex sx={{ justifyContent: "center" }} {...props}>
+    <Flex sx={{ justifyContent: "center" }}>
       {socialLinks &&
         socialLinks.map(([name, link], i) => {
           const socialIcon = icons[name];
           return (
-            <Box key={i} sx={{ mx: 5 }}>
+            <Box key={name} sx={{ mx: 5 }}>
               <a href={link} target="_blank" rel="noopener noreferrer">
                 <Icon size={24} icon={socialIcon} />
               </a>
