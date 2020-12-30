@@ -73,7 +73,11 @@ const Theme = ({ state }) => {
 export default connect(Theme);
 
 const formStyle = {
-  'input[type="text"],input[type="email"], textarea': {
+  '.gform_body ul': {
+    listStyle: "none",
+    paddingLeft: 0
+  },
+  'input[type="text"],input[type="email"], input[type="tel"], textarea': {
     border: "none",
     height: 50,
     width: ["100%", "80%"],
