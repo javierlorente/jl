@@ -41,7 +41,7 @@ const Post = ({ state, libraries, actions }) => {
     actions.source.fetch("/");
     Archive.preload();
   }, []);
-
+  
   return data.isReady ? (
     <Container className="container" sx={{ maxWidth: "l" }}>
       <article
@@ -80,7 +80,7 @@ const Post = ({ state, libraries, actions }) => {
           </div>
         )}
       </article>
-      <Comments postId={post.id} />
+      {data.isPost && <Comments postId={post.id} />}
     </Container>
   ) : null;
 };
