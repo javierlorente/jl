@@ -5,5 +5,20 @@
       "src": "package.json",
       "use": "@frontity/now"
     }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "headers": {
+        "cache-control": "max-age=31536000,s-maxage=31536000,immutable"
+      },
+      "dest": "/build/static/$1"
+    },
+    { "src": "/favicon.ico", "dest": "/favicon.ico" },
+    {
+      "src": "/(.*)",
+      "headers": { "cache-control": "no-cache" },
+      "dest": "/build/server.js"
+    }
   ]
 }
