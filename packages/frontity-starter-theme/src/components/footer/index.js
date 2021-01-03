@@ -11,7 +11,7 @@ const Footer = ({ state }) => {
       <Container>
         <Flex sx={{ flexDirection: ["column", "row"], justifyContent: "space-between", alignItems: "center" }}>
         <p>&copy; {new Date().getFullYear()} Javier Lorente</p>
-        <Flex>
+        <Flex sx={{gap: "m", flexWrap: "wrap", justifyContent: ["center", "space-between"]}}>
           {items.map(([name, link]) => {
             const isCurrentPage = state.router.link === link;
             return (
@@ -24,8 +24,7 @@ const Footer = ({ state }) => {
                   fontWeight: 500,
                   textTransform: "uppercase",
                   fontSize: "xs",
-                  fontFamily: "bold",
-                  letterSpacing: 1,
+                  letterSpacing: .3,
                   "&:focus": { outline: "none" },
                 }}
               >

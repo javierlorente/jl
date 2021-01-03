@@ -6,7 +6,7 @@ export const footer = {
   fontSize: 's',
   a: {
     color: 'footerColor',
-    textDecoration: 'underline',
+    textDecoration: 'none',
     display: 'inline-block',
     transition: 'all .4s ease-in-out',
     '&:hover': {
