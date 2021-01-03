@@ -62,6 +62,7 @@ const starterTheme = {
       beforeSSR: ({ actions }) => async () => {
         await actions.source.fetch("all-categories");
         await actions.source.fetch("menus/primary");
+        await actions.source.fetch("menus/secondary");
       },
     },
   },
