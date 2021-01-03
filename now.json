@@ -13,6 +13,7 @@
 			"dest": "/static/$1"
 		},
 		{ "src": "/favicon.ico", "dest": "favicon.ico" },
+		{ "src": "/ads.txt", "dest": "ads.txt" },
 		{
 			"src": "($|/.*)",
 			"headers": { "cache-control": "s-maxage=1,stale-while-revalidate" },
