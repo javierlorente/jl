@@ -1,11 +1,12 @@
 import Theme from "./components";
 import image from "@frontity/html2react/processors/image";
 import {
-  // categoriesHandler,
   featuredCatHandler,
   allCategoriesHandler,
-  menuHandler
+  menuHandler,
+  taxMenuHandler
 } from "./handlers";
+import { getUrlData } from "./helpers";
 
 const starterTheme = {
   name: "frontity-starter-theme",
@@ -59,10 +60,14 @@ const starterTheme = {
       closeSearchModal: ({ state }) => {
         state.theme.isSearchModalOpen = false;
       },
-      beforeSSR: ({ actions }) => async () => {
+      beforeSSR: ({ actions, state }) => async () => {
         await actions.source.fetch("all-categories");
         await actions.source.fetch("menus/primary");
-        await actions.source.fetch("menus/secondary");
+        await actions.source.fetch("menus/secondary");  
+        const { id } = state.source.get(state.router.link)
+        if(id) {
+          await actions.source.fetch("taxs-menu/" + id);  
+        }
       },
     },
   },
@@ -71,7 +76,7 @@ const starterTheme = {
       processors: [image],
     },
     source: {
-      handlers: [featuredCatHandler, allCategoriesHandler, menuHandler],
+      handlers: [featuredCatHandler, allCategoriesHandler, menuHandler, taxMenuHandler],
     },
   },
 };
