@@ -9,7 +9,14 @@ const settings = {
     },
   },
   packages: [
-    "frontity-contact-form-7",
+    {
+      name: "@frontity/google-analytics",
+      state: {
+        googleAnalytics: {
+          trackingId: "UA-181168483-1",
+        },
+      },
+    },
     {
       name: "frontity-starter-theme",
       state: {
