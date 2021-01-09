@@ -45,7 +45,7 @@ const settings = {
           // api: "https://test.frontity.io/wp-json",
           // api: "http://javierlorrente.wst/wp-json",
           params: {
-            per_page: 50,
+            per_page: 100,
             // type: ["post", "page"],
           },
         },
