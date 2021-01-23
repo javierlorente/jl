@@ -60,6 +60,13 @@ const outline = {
   },
 };
 
+const link = {
+  ...sharedButtonStyles,
+  color: "currentColor",
+  background: "transparent",
+  boxShadow: "none"
+};
+
 const primary = {
   ...sharedButtonStyles,
   bg: "primary",
@@ -119,6 +126,9 @@ export const buttons = {
       ...outline,
       ...small,
     },
+  },
+  link: {
+    ...link
   },
   hamburger: {
     pointer: "cursor",

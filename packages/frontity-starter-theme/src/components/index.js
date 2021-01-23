@@ -14,6 +14,7 @@ import Post from "./post";
 import { getUrlData } from "../helpers";
 import Title from "./title";
 import SearchResults from "./search/searchResults";
+import CookieNotice from "./cookieNotice";
 import { Grommet } from "grommet";
 
 const Theme = ({ state }) => {
@@ -65,6 +66,7 @@ const Theme = ({ state }) => {
           </main>
           <Footer />
         </Flex>
+        <CookieNotice />
       </ThemeProvider>
     </Grommet>
   );

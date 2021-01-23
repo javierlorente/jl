@@ -6,6 +6,7 @@ import {
   header,
   footer,
   form,
+  notice
 } from "./components";
 import { fonts, fontSizes, lineHeights, base } from "./components/typo";
 
@@ -20,6 +21,7 @@ export default {
   header,
   footer,
   form,
+  notice,
   sizes: {
     container: 1200,
     s: 300,
