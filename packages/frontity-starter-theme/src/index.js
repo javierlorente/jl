@@ -7,6 +7,9 @@ import {
   taxMenuHandler
 } from "./handlers";
 import { getUrlData } from "./helpers";
+import input from "./processors/input";
+import textarea from "./processors/textarea";
+import gform from "./processors/gform";
 
 const starterTheme = {
   name: "frontity-starter-theme",
@@ -73,7 +76,7 @@ const starterTheme = {
   },
   libraries: {
     html2react: {
-      processors: [image],
+      processors: [image, input, textarea, gform],
     },
     source: {
       handlers: [featuredCatHandler, allCategoriesHandler, menuHandler, taxMenuHandler],
