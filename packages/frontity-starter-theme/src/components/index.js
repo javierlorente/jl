@@ -34,7 +34,7 @@ const Theme = ({ state }) => {
           <html lang="es" />
           <script
             data-ad-client="ca-pub-2523307744148497"
-            async
+            defer
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
           ></script>
         </Head>
