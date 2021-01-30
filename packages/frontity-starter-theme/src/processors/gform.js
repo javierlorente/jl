@@ -62,10 +62,10 @@ const Form = ({children, formId, ...props}) => {
     return (<form ref={formRef} onSubmit={hanldeSubmit} {...props}>
         {children}
         { successMessage && 
-        <div style={{ paddingTop: "1.5rem", fontWeight: "bold"}} dangerouslySetInnerHTML={{ __html: successMessage }} />
+        <div role="alert" style={{ paddingTop: "1.5rem", fontWeight: "bold"}} dangerouslySetInnerHTML={{ __html: successMessage }} />
         }
         { errorMessage && 
-        <div style={{ paddingTop: "1.5rem", fontWeight: "bold", color: "#B71C29"}} dangerouslySetInnerHTML={{ __html: errorMessage }} />
+        <div role="alert" style={{ paddingTop: "1.5rem", fontWeight: "bold", color: "#B71C29"}} dangerouslySetInnerHTML={{ __html: errorMessage }} />
         }
     </form>)
 }

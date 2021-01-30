@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef } from "react";
 
 const proccesor = {
     name: "textarea",
@@ -13,12 +13,13 @@ const proccesor = {
   
   export default proccesor;
   
-  const Textarea = ({ value: defaultValue, ...props }) => {
-    const [ value, setValue ] = useState(defaultValue || "")
+  const Textarea = ({ value, ...props }) => {
+    const textareaRef = useRef()
     useEffect(() => {
-        const clear  = () => setValue("")
+      const clear  = () => textareaRef.current.value = ""
+
         window.addEventListener("formSent", clear)
         return () => window.removeEventListener("formSent", clear)
     }, [])
-  return (<textarea value={value} onChange={ e => setValue(e.target.value)} {...props} />)
+  return (<textarea ref={textareaRef} defaultValue={value} {...props} />)
 };

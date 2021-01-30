@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 
 const proccesor = {
   name: "input",
@@ -13,12 +13,13 @@ const proccesor = {
 
 export default proccesor;
 
-const Input = ({ value: defaultValue, ...props }) => {
-    const [ value, setValue ] = useState(defaultValue || "")
+const Input = ({ value, ...props }) => {
+    const inputRef = useRef()
     useEffect(() => {
-        const clear  = () => setValue("")
+        const clear  = () => inputRef.current.value = ""
+        
         window.addEventListener("formSent", clear)
         return () => window.removeEventListener("formSent", clear)
     }, [])
-    return (<input value={value} onChange={e => setValue(e.target.value)} {...props} />)
+    return (<input ref={inputRef} defaultValue={value} {...props}/>)
 };
