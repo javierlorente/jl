@@ -31,7 +31,7 @@ const Theme = ({ state }) => {
         <Head>
           <title>{title}</title>
           <meta name="description" content={state.frontity.description} />
-          <html lang="es" />
+          <html lang="es" /> 
         </Head>
         <FontFace />
         <Global styles={globalStyles} />
