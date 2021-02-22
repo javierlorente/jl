@@ -1,5 +1,3 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
 import { jsx, Container, Flex, Box } from "theme-ui";
 import { connect } from "frontity";
 

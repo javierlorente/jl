@@ -1,5 +1,3 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
 import { jsx, Container, Flex } from "theme-ui";
 import SocialShare from "../socialShare";
 import { connect } from "frontity";
