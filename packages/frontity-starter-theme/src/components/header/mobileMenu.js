@@ -1,3 +1,5 @@
+/** @jsxRuntime classic */
+/** @jsx jsx */
 import { jsx, Box, Close } from "theme-ui";
 import { connect } from "frontity";
 import { Menu as MenuIcon } from "grommet-icons";

@@ -1,3 +1,5 @@
+/** @jsxRuntime classic */
+/** @jsx jsx */
 import { jsx, Flex } from "theme-ui";
 import Loader from "react-spinners/BarLoader";
 

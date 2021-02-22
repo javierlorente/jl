@@ -1,3 +1,5 @@
+/** @jsxRuntime classic */
+/** @jsx jsx */
 import { jsx, Avatar, Flex, Container } from "theme-ui";
 import React, { useEffect } from "react";
 import { decode, connect } from "frontity";
