@@ -1,3 +1,4 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Flex, Button, Box } from "theme-ui";
 import { connect } from "frontity";

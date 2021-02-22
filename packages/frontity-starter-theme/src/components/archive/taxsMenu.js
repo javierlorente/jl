@@ -1,3 +1,4 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Flex, Container } from "theme-ui";
 import React, { useEffect } from "react";
