@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import { jsx, Close, Box } from "theme-ui";
 import { Search } from "grommet-icons";
 import { Layer, Button } from "grommet";

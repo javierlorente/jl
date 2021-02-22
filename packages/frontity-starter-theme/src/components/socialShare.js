@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import { jsx, Flex, Box } from "theme-ui";
 import { connect } from "frontity";
 import { Icon } from "react-icons-kit";

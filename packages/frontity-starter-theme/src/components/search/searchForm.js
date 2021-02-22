@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import { jsx } from "theme-ui";
 import { useRef } from "react";
 import ScreenReaderText from "../../styles/screenReader";

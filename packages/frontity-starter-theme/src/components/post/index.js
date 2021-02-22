@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import { jsx, Container, Box } from "theme-ui";
 import { useEffect } from "react";
 import { connect } from "frontity";

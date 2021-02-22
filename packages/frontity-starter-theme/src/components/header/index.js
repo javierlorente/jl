@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import { jsx, Container, Flex } from "theme-ui";
 import { connect } from "frontity";
 import Menu from "./menu";
