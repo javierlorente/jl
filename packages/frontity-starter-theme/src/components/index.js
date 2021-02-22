@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, Flex, ThemeProvider } from "theme-ui";
 import theme from "../theme-ui";
 import { Global, connect, Head } from "frontity";
@@ -31,7 +30,7 @@ const Theme = ({ state }) => {
         <Head>
           <title>{title}</title>
           <meta name="description" content={state.frontity.description} />
-          <html lang="es" /> 
+          <html lang="es" />
         </Head>
         <FontFace />
         <Global styles={globalStyles} />
@@ -70,9 +69,9 @@ const Theme = ({ state }) => {
 export default connect(Theme);
 
 const formStyle = {
-  '.gform_body ul': {
+  ".gform_body ul": {
     listStyle: "none",
-    paddingLeft: 0
+    paddingLeft: 0,
   },
   'input[type="text"],input[type="email"], input[type="tel"], textarea': {
     border: "none",
