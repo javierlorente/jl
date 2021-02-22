@@ -1,3 +1,4 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Container, Flex, Box } from "theme-ui";
 import { connect } from "frontity";
@@ -16,7 +17,7 @@ const Page404 = ({ state }) => {
               border: `10px double`,
               borderColor: "text",
               textAlign: "center",
-              color: "primary"
+              color: "primary",
             }}
           >
             {data.errorStatus || "404"}
@@ -25,7 +26,7 @@ const Page404 = ({ state }) => {
             sx={{
               textTransform: "uppercase",
               textAlign: "center",
-              color: "secondary"
+              color: "secondary",
             }}
           >
             {data.is404

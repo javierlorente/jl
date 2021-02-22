@@ -1,3 +1,4 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Close } from "theme-ui";
 import { connect } from "frontity";
@@ -19,7 +20,7 @@ const MobileMenu = ({ state, actions, className, ...props }) => {
         onClick={openMobileMenu}
         className={isOpen ? "btn-menu-opened" : "btn-menu-closing"}
         sx={{
-          variant: `buttons.hamburger`
+          variant: `buttons.hamburger`,
         }}
       />
       {isOpen && (
@@ -35,7 +36,7 @@ const MobileMenu = ({ state, actions, className, ...props }) => {
           <Box
             color="white"
             sx={{
-              pointer: `cursor`
+              pointer: `cursor`,
             }}
             className="close"
             onClick={closeMobileMenu}

@@ -1,3 +1,4 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Close, Box } from "theme-ui";
 import { Search } from "grommet-icons";
@@ -28,7 +29,6 @@ const SearchModal = ({ state, actions }) => {
         className={
           isSearchModalOpen ? "btn-search-opened" : "btn-search-closing"
         }
-
       >
         <Search />
       </Box>

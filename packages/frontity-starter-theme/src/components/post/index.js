@@ -1,3 +1,4 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Container, Box } from "theme-ui";
 import { useEffect } from "react";
@@ -41,7 +42,7 @@ const Post = ({ state, libraries, actions }) => {
     actions.source.fetch("/");
     Archive.preload();
   }, []);
-  
+
   return data.isReady ? (
     <Container className="container" sx={{ maxWidth: "l" }}>
       <article
