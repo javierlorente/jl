@@ -1,4 +1,4 @@
-/** @jsxImportSource theme-ui */
+/** @jsx jsx */
 import { jsx, Container, Flex } from "theme-ui";
 import { useEffect } from "react";
 import { connect } from "frontity";

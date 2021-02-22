@@ -1,4 +1,4 @@
-/** @jsxImportSource theme-ui */
+/** @jsx jsx */
 import { jsx, AspectRatio } from "theme-ui";
 import { connect } from "frontity";
 import { getMediaAttributes } from "../../helpers";

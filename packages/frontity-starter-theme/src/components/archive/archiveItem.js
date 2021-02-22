@@ -1,4 +1,4 @@
-/** @jsxImportSource theme-ui */
+/** @jsx jsx */
 import { jsx, Container } from "theme-ui";
 import Link from "../link";
 import { connect } from "frontity";
