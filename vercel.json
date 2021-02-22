@@ -19,5 +19,9 @@
 			"headers": { "cache-control": "s-maxage=1,stale-while-revalidate" },
 			"dest": "/server.js"
 		}
-	]
+	],
+  "redirects": [
+ 	{ "source": "/despejar-x-ecuacion", "destination": "https://cursos.com/blog/despejar-x-ecuacion/" },
+ 	{ "source": "/metodo-cuantitativo", "destination": "https://cursos.com/blog/metodo-cuantitativo/" }
+  ]
 }
