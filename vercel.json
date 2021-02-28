@@ -7,7 +7,7 @@
     }
   ],
   "redirects": [
- 	{ "source": "/despejar-x-ecuacion", "destination": "https://cursos.com/blog/despejar-x-ecuacion/" },
- 	{ "source": "/metodo-cuantitativo", "destination": "https://cursos.com/blog/metodo-cuantitativo/" }
+ 	{ "source": "/despejar-x-ecuacion/", "destination": "https://cursos.com/blog/despejar-x-ecuacion/" },
+ 	{ "source": "/metodo-cuantitativo/", "destination": "https://cursos.com/blog/metodo-cuantitativo/" }
   ]
 }
