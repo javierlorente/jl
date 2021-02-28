@@ -1,5 +1,4 @@
 import { connect, styled } from "frontity";
-import Img from "@frontity/components/image";
 import SectionContainer from "../styles/section-container";
 
 /**
@@ -33,6 +32,9 @@ const FeaturedMedia = ({ state, id, className }) => {
     <Figure className={className}>
       <SectionContainer size="medium">
         <Image
+          width={media.media_details.width}
+          height={media.media_details.height}
+          loading="lazy"
           alt={media.title.rendered}
           src={media.source_url}
           srcSet={srcset}
@@ -48,7 +50,7 @@ const Figure = styled.figure`
   margin-bottom: 2rem;
 `;
 
-const Image = styled(Img)`
+const Image = styled.img`
   margin: 0 auto;
   max-width: 100%;
   display: block;
