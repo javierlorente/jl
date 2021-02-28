@@ -18,18 +18,12 @@ const settings = {
       },
     },
     {
-      name: "frontity-starter-theme",
+      name: "javier-lorente",
       state: {
         theme: {
-          menu: [
-            ["Inicio", "/"],
-            ["SEO", "/c/seo/"],
-            ["Tecnologia", "/c/tecnologia/"],
-            ["Economia", "/c/economia/"],
-            ["Viajes", "/c/viajes/"],
-            ["Movilidad", "/c/movilidad/"],
-            ["Contacto", "/contacto/"],
-          ],
+          logo: "J.Lorente",
+          menu: [],
+          showSearchInHeader: true,
           autoPreFetch: "hover",
           featured: {
             showOnList: false,
@@ -52,7 +46,7 @@ const settings = {
           // api: "https://test.frontity.io/wp-json",
           // api: "http://javierlorrente.wst/wp-json",
           params: {
-            per_page: 100,
+            per_page: 20,
             // type: ["post", "page"],
           },
         },

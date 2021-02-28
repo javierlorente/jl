@@ -17,11 +17,14 @@
     "@frontity/google-analytics": "^1.4.1",
     "@frontity/head-tags": "^1.1.1",
     "@frontity/html2react": "^1.6.1",
+    "@frontity/mars-theme": "^1.5.0",
     "@frontity/tiny-router": "^1.3.2",
+    "@frontity/twentytwenty-theme": "^1.3.0",
     "@frontity/wp-comments": "^0.2.6",
     "@frontity/wp-source": "^1.11.1",
     "frontity": "^1.14.1",
     "frontity-contact-form-7": "^0.1.7",
-    "frontity-starter-theme": "./packages/frontity-starter-theme"
+    "frontity-starter-theme": "./packages/frontity-starter-theme",
+    "javier-lorente": "./packages/javier-lorente"
   }
 }
