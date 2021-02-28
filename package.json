@@ -24,7 +24,6 @@
     "@frontity/wp-source": "^1.11.1",
     "frontity": "^1.14.1",
     "frontity-contact-form-7": "^0.1.7",
-    "frontity-starter-theme": "./packages/frontity-starter-theme",
     "javier-lorente": "./packages/javier-lorente"
   }
 }
