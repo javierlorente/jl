@@ -40,14 +40,10 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          prefix: "/wp-json",
-          // api: ({ state }) => state.frontity.backend + state.source.prefix,
-          api: "https://frontity.javierlorente.es/wp-json",
-          // api: "https://test.frontity.io/wp-json",
-          // api: "http://javierlorrente.wst/wp-json",
+          url: "https://frontity.javierlorente.es/",
+          redirections: "all",
           params: {
             per_page: 20,
-            // type: ["post", "page"],
           },
         },
       },
