@@ -9,8 +9,9 @@ import SectionContainer from "../styles/section-container";
 
 const MobileMenuModal = ({ state, actions }) => {
   // Get the menu state and action
-  const { menu, isMobileMenuOpen } = state.theme;
+  const { isMobileMenuOpen } = state.theme;
   const { closeMobileMenu } = actions.theme;
+  const { items: menu } = state.source.get("menus/primary");
 
   // Check if there are links in the state
   const isThereLinks = menu != null && menu.length > 0;
