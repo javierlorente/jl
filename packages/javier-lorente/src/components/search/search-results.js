@@ -7,8 +7,6 @@ import SearchForm from "./search-form";
 const reverseFormat = (query) => query.replace("+", " ");
 
 const SearchResults = ({ state }) => {
-  const { primary } = state.theme.colors;
-
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
 
@@ -19,7 +17,7 @@ const SearchResults = ({ state }) => {
 
   return (
     <>
-      <ArchiveHeader label="Search" labelColor={primary}>
+      <ArchiveHeader label="Search">
         <Title>{`Resultados para: “${reverseFormat(searchQuery)}”`}</Title>
         <IntroText size="thin">
           {isEmpty ? (

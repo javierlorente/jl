@@ -1,4 +1,4 @@
-import { styled, connect, keyframes, css } from "frontity";
+import { styled, keyframes, css } from "frontity";
 
 const addAlpha = (hex, alpha) => {
   const r = parseInt(hex.slice(1, 3), 16),
@@ -47,15 +47,15 @@ const wrapper = (width, height, color) =>
     background-clip: padding-box;
   `;
 
-const Loading = ({ state }) => (
+const Loading = () => (
   <Container>
-    <div css={wrapper(240, 4, state.theme.colors.primary)}>
-      <div css={style(1, state.theme.colors.primary)} />
+    <div css={wrapper(240, 4, "#082737")}>
+      <div css={style(1, "#fcb458")} />
     </div>
   </Container>
 );
 
-export default connect(Loading);
+export default Loading;
 
 const Container = styled.div`
   width: 100%;

@@ -6,8 +6,6 @@ import Button from "../styles/button";
 const SearchForm = ({ state, actions, libraries }) => {
   const parse = libraries.source.parse(state.router.link);
   const searchQuery = parse.query["s"];
-  const { primary } = state.theme.colors;
-
   const { closeSearchModal } = actions.theme;
   // Keep a reference to the input so we can grab it's value on form submission
   const inputRef = useRef();
