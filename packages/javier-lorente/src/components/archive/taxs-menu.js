@@ -3,22 +3,20 @@ import { decode, connect, styled } from "frontity";
 import Link from "../link";
 
 const TaxsMenu = ({ state, actions }) => {
-  const data = state.source.get(state.router.link);
-  let taxs = null;
+  const { id } = state.source.get(state.router.link);
+  const taxs = state.source.get("taxs-menu/" + id);
 
   useEffect(() => {
-    actions.source.fetch("taxs-menu/" + data.id);
-  }, [data.id]);
-
-  if (data.id) {
-    taxs = state.source.get("taxs-menu/" + data.id);
-  }
+    if(id) {
+      actions.source.fetch("taxs-menu/" + id);
+    }
+  }, [id]);
 
   if (taxs && taxs.isReady) {
     return (
       <Container>
         <Nav>
-          {taxs.items.map((item, i) => {
+          {taxs.items?.map((item, i) => {
             const { url, title } = item.menu_item;
             if (!url || !title) {
               return null;
