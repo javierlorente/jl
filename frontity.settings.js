@@ -3,7 +3,7 @@ const settings = {
   state: {
     frontity: {
       url: "https://www.javierlorente.es/",
-      title: "Javier Lorente - SEO, inversiones y promos para viajar.",
+      title: "Javier Lorente - SEO, inversiones y promociones para viajar.",
       description: "SEO, inversiones y promos para viajar.",
       backend: "https://frontity.javierlorente.es/",
     },
