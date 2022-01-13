@@ -7,6 +7,6 @@
     }
   ],
   "redirects": [
-  { "source": "/prueba/", "destination": "/prueba2/" },
+    { "source": "/prueba/", "destination": "/prueba2/" }
   ]
 }
