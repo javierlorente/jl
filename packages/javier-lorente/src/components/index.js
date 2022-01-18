@@ -32,6 +32,11 @@ const Theme = ({ state }) => {
       <Head>
         <meta name="description" content={state.frontity.description} />
         <html lang="es" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2523307744148497"
+          crossorigin="anonymous"
+        ></script>
       </Head>
 
       {/* Accessibility: Provides ability to skip to main content */}
