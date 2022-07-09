@@ -7,9 +7,9 @@
   },
   "keywords": [],
   "dependencies": {
-    "@frontity/components": "^1.7.0",
-    "@frontity/html2react": "^1.6.0",
-    "frontity": "^1.14.0",
+    "@frontity/components": "^1.8.2",
+    "@frontity/html2react": "^1.7.0",
+    "frontity": "^1.17.2",
     "react-spring": "^8.0.27"
   },
   "author": "",
